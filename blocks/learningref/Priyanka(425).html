@@ -22,7 +22,7 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             color: #fefeff;
-            background-color: #039311;
+            background-color: #444444; /* Changed to dark grey */
             padding: 10px;
             border-radius: 5px;
         }
@@ -30,7 +30,7 @@
             margin-top: 30px;
             border-bottom: 2px solid #0f0f10;
             padding: 10px;
-            background-color: #30da2d;
+            background-color: #FFFFFF; /* Changed to white */
             border-radius: 4px;
             color: #020202;
         }
@@ -61,7 +61,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #d0f9bd;
+            background-color: #FFFFFF; /* Changed to white */
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -78,59 +78,49 @@
             font-size: 0.9em;
             color: #6a7077;
         }
-    .navbar {
-    position: sticky;
-    top: 0;
-    background-color:  #0c540e;
-    width: 100%;
-    z-index: 1000;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    justify-content: space-between;
-  }
-
- 
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  .nav-list li {
-    margin: 0;
-    color: #866545;
-  }
-  
-  .nav-list a {
-    text-decoration: none;
-    color: #FB5235;
-    align-content: center;
-    padding: 1rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-    transform: scale(1.02);  
-    background-color: #2fef2c;
-   
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
-    transition: transform 0.2s, box-shadow 0.2s;
-    border-radius: 4px;
-  }
-  
-  .content {
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333333; /* Changed to dark grey */
+            width: 100%;
+            z-index: 1000;
+            padding: 0.5rem 1rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            border-radius: 10px;
+            justify-content: space-between;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-list li {
+            margin: 0;
+            color: #866545;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: #FB5235;
+            align-content: center;
+            padding: 1rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .nav-list a:hover {
+            transform: scale(1.02);  
+            background-color: #eeeeee; /* Changed hover background to light grey */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 4px;
+        }
+        .content {
+            padding: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -141,7 +131,7 @@
             <li><a  style="color:rgb(253, 251, 251)" href="/Priyankacb.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
         </ul>
     </nav>
-  <section>
+    <section>
     
         <h1>Data Structures and Algorithms </h1>
         <div class="container">
@@ -405,8 +395,7 @@
     </div>
         </ul>
     </div>
-           
-    </div>
+        
   </section>
   <button onclick="window.history.back();" style="background-color: #0bb12f; color: rgb(241, 233, 233); border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
 </body> 
