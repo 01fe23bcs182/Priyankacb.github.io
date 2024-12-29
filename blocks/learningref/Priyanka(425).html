@@ -13,7 +13,7 @@
             margin: 0;
             padding: 20px;
         }
-       
+
         h1, h2, h3 {
             color: #007bff;
         }
@@ -22,7 +22,7 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             color: #fefeff;
-            background-color: #444444; /* Changed to dark grey */
+            background-color: #444444; /* Dark grey */
             padding: 10px;
             border-radius: 5px;
         }
@@ -30,7 +30,7 @@
             margin-top: 30px;
             border-bottom: 2px solid #0f0f10;
             padding: 10px;
-            background-color: #FFFFFF; /* Changed to white */
+            background-color: #FFEBEE; /* White */
             border-radius: 4px;
             color: #020202;
         }
@@ -41,9 +41,10 @@
         ul {
             list-style-type: disc;
             margin: 15px 20px;
+            padding-left: 20px; /* Consistent padding */
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 16px; /* Added spacing between list items */
         }
         code {
             background-color: #dfe6ed;
@@ -59,9 +60,9 @@
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 30px auto; /* Consistent spacing between containers */
             padding: 20px;
-            background-color: #FFFFFF; /* Changed to white */
+            background-color: #FFEBEE; /* White background */
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -81,7 +82,7 @@
         .navbar {
             position: sticky;
             top: 0;
-            background-color: #333333; /* Changed to dark grey */
+            background-color: #333333; /* Dark grey */
             width: 100%;
             z-index: 1000;
             padding: 0.5rem 1rem;
@@ -100,7 +101,6 @@
         }
         .nav-list li {
             margin: 0;
-            color: #866545;
         }
         .nav-list a {
             text-decoration: none;
@@ -111,7 +111,7 @@
         }
         .nav-list a:hover {
             transform: scale(1.02);  
-            background-color: #eeeeee; /* Changed hover background to light grey */
+            background-color: #eeeeee; /* Light grey on hover */
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
             transition: transform 0.2s, box-shadow 0.2s;
             border-radius: 4px;
@@ -126,106 +126,93 @@
 <body>
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a style="color:rgb(255, 255, 255)"  href="/Priyankacb.github.io/blocks/home/home.html">Home</a></li>
-            <li><a style="color:rgb(255, 255, 255)"  href="/Priyankacb.github.io/index.html">PROJECT OVERVIEW</a></li>
-            <li><a  style="color:rgb(253, 251, 251)" href="/Priyankacb.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+            <li><a href="/Priyankacb.github.io/blocks/home/home.html" style="color:rgb(255, 255, 255)">Home</a></li>
+            <li><a href="/Priyankacb.github.io/index.html" style="color:rgb(255, 255, 255)">Project Overview</a></li>
+            <li><a href="/Priyankacb.github.io/blocks/learningref/teamlearning.html" style="color:rgb(255, 255, 255)">Learning Reflections</a></li>
         </ul>
     </nav>
+
     <section>
-    
-        <h1>Data Structures and Algorithms </h1>
+        <h1>Data Structures and Algorithms</h1>
+        
         <div class="container">
-        <h2>1. What are the kinds of problems we see in nature?</h2>
-             <h3>Ans:</h3>
+            <h2>1. What are the kinds of problems we see in nature?</h2>
+            <h3>Ans:</h3>
             <h3>Iteration</h3>
-        <ul>
-           <li><strong>Definition:</strong> Repeatedly applying a set of instructions until a condition is met.</li>
-           <li><strong>Examples:</strong>
-             <ul>
-                <li>Population growth simulations.</li>
-                <li>Compound interest calculations.</li>
+            <ul>
+                <li><strong>Definition:</strong> Repeatedly applying a set of instructions until a condition is met.</li>
+                <li><strong>Examples:</strong>
+                    <ul>
+                        <li>Population growth simulations.</li>
+                        <li>Compound interest calculations.</li>
+                    </ul>
+                </li>
             </ul>
-    </li>
-        </ul>
             <h3>Recursion</h3>
-<ul>
-    <li><strong>Definition:</strong> Breaking a problem into smaller instances of the same problem.</li>
-    <li><strong>Examples:</strong>
-        <ul>
-            <li>Computing factorials or Fibonacci numbers.</li>
-            <li>Tower of Hanoi problem.</li>
-        </ul>
-    </li>
-</ul>
-            <h3>Backtracking</h3>
-<ul>
-    <li><strong>Definition:</strong> Exploring all possible options to find a solution and reverting decisions when a dead-end is reached.</li>
-    <li><strong>Examples:</strong>
-        <ul>
-            <li>Solving mazes.</li>
-            <li>Generating permutations.</li>
-        </ul>
-    </li>
-</ul>
-
-    </div>
-    
-    <div class="container">
-        <h2>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth</h2>
-        <ul>
-            <li>Space efficiency refers to the amount of memory an algorithm uses, and time efficiency refers to the amount of time it takes to complete. These are critical factors in algorithm design, especially when working with large datasets or in resource-constrained environments</li>
-           
-        </ul>
-    
-    
-        <h2>Why are They Important?</h2>
-        <ul>
-            <li>Algorithms are classified based on their time and space complexities, using Big O notation to express the order of growth. Common classes of problems include linear (O(n)), logarithmic (O(log n)), quadratic (O(n²)), and exponential (O(2^n)) complexities.</li>
-        </ul>
-    </div>
-
-    <div class="container">
-        <h2>3. Take away from different design principles from chapter 2</h2>
-    </div>
-
-    <div class="container">
-        <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2>
-        <h3>Ans:</h3>
-        <ul>
-           <li><strong>Binary Search Tree (BST):</strong> Allows efficient searching, insertion, and deletion.</li>
-    <li><strong>AVL Tree:</strong> Self-balancing BST ensuring logarithmic operations.</li>
-    <li><strong>2-3 Tree:</strong> Balanced search tree allowing multiple keys per node.</li>
-    <li><strong>Red-Black Tree:</strong> Ensures balanced height using coloring rules.</li>
-    <li><strong>Heap:</strong> Used in priority queues with efficient min/max access.</li>
-    <li><strong>Trie:</strong> Optimizes prefix-based queries like dictionary lookups.</li>
+            <ul>
+                <li><strong>Definition:</strong> A problem-solving technique where a function calls itself to break a problem into smaller parts.</li>
+                <li><strong>Examples:</strong>
+                    <ul>
+                        <li>Fractal generation.</li>
+                        <li>Factorial calculation.</li>
+                    </ul>
+                </li>
             </ul>
+        </div>
+        <div class="container">
+             <h2>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth</h2>
+             <h3>Ans:</h3>
+             <ul>
+                <li>Space efficiency refers to the amount of memory an algorithm uses, and time efficiency refers to the amount of time it takes to complete. These are critical factors in algorithm design, especially when working with large datasets or in resource-constrained environments</li>
+             </ul>
+             <h2>Why are They Important?</h2>
+             <ul>
+                 <li>Algorithms are classified based on their time and space complexities, using Big O notation to express the order of growth. Common classes of problems include linear (O(n)), logarithmic (O(log n)), quadratic (O(n²)), and exponential (O(2^n)) complexities.</li>
+            </ul> 
+        </div>
 
-        <h3>Optimization Scenarios</h3>
-<ul>
-    <li><strong>Applications:</strong>
-        <ul>
-            <li>Database indexing.</li>
-            <li>Autocomplete systems.</li>
-            <li>Task scheduling.</li>
-        </ul>
-    </li>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>3. Take away from different design principles from chapter 2</h2>
+            </div>
 
-    <div class="container">
-        <h2>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed</h2>
-        <h3>Ans:</h3>
-        <ul>
-            <li>Array query algorithms are essential for efficiently accessing, updating, and processing elements in large arrays. Efficient algorithms allow us to search, sort, or manipulate data quickly. Applications include range queries in databases, searching for patterns in data, and optimizing data access in caches or memory.</li>
-        </ul>
-    </div>
+       <div class="container">
+            <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2>
+            <h3>Ans:</h3>
+            <ul>
+                <li><strong>Binary Search Tree (BST):</strong> Allows efficient searching, insertion, and deletion.</li>
+                <li><strong>AVL Tree:</strong> Self-balancing BST ensuring logarithmic operations.</li>
+                <li><strong>2-3 Tree:</strong> Balanced search tree allowing multiple keys per node.</li>
+                <li><strong>Red-Black Tree:</strong> Ensures balanced height using coloring rules.</li>
+                <li><strong>Heap:</strong> Used in priority queues with efficient min/max access.</li>
+                <li><strong>Trie:</strong> Optimizes prefix-based queries like dictionary lookups.</li>
+           </ul>
 
-    <div class="container">
-        <h2>6. Differentiate between tree and graphs and their traversals. The applications of each</h2>
-        <h3>Ans:</h3>
-        <ul>
-            <li><strong>Difference Between Trees and Graphs:</strong> A tree is a hierarchical structure where each node has a single parent and zero or more children. A graph, on the other hand, is a set of vertices connected by edges, and nodes can have multiple relationships with each other. Trees are a specific kind of graph that doesn't have cycles, while graphs can have cycles.</li>
-            <li><strong>Traversals:</strong> Both trees and graphs have various ways to traverse through their elements:</li>
+           <h3>Optimization Scenarios</h3>
+           <ul>
+               <li><strong>Applications:</strong>
+           <ul>
+               <li>Database indexing.</li>
+               <li>Autocomplete systems.</li>
+               <li>Task scheduling.</li>
+           </ul>
+               </li>
+           </ul>
+       </div>
+
+       <div class="container">
+            <h2>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed</h2>
+            <h3>Ans:</h3>
+            <ul>
+                <li>Array query algorithms are essential for efficiently accessing, updating, and processing elements in large arrays. Efficient algorithms allow us to search, sort, or manipulate data quickly. Applications include range queries in databases, searching for patterns in data, and optimizing data access in caches or memory.</li>
+           </ul>
+       </div>
+
+       <div class="container">
+            <h2>6. Differentiate between tree and graphs and their traversals. The applications of each</h2>
+            <h3>Ans:</h3>
+            <ul>
+                <li><strong>Difference Between Trees and Graphs:</strong> A tree is a hierarchical structure where each node has a single parent and zero or more children. A graph, on the other hand, is a set of vertices connected by edges, and nodes can have multiple relationships with each other. Trees are a specific kind of graph that doesn't have cycles, while graphs can have cycles.</li>
+                <li><strong>Traversals:</strong> Both trees and graphs have various ways to traverse through their elements:</li>
             <ul>
                 <li><strong>Tree Traversals:</strong>
                     <ul>
@@ -237,164 +224,139 @@
                 </li>
                 <li><strong>Graph Traversals:</strong>
                     <ul>
-                        <li><strong>BFS (Breadth-First Search):</strong>Explores all nodes at the present depth level before moving on to nodes at the next depth level.
-</li>
-                        <li><strong>DFS (Depth-First Search):</strong> Explores as deep as possible before backtracking.
-</li>
+                        <li><strong>BFS (Breadth-First Search):</strong>Explores all nodes at the present depth level before moving on to nodes at the next depth level. </li>
+               
+                        <li><strong>DFS (Depth-First Search):</strong> Explores as deep as possible before backtracking.</li>
                     </ul>
                 </li>
             </ul>
-        </ul>
-    </div>
-     <div class="container">
-        <h2>7.Deliberate on sorting and searching algorithms, the technique behind each and their connection to the real world</h2>
-         <h3>Ans:</h3>
-           <ul>
-               <li><strong>Sorting algorithms:</strong> These algorithms are used to arrange data in a specific order, such as ascending or descending. Sorting is essential in various computational tasks like data analysis, searching, and optimizing processes.</li>
-               <li><strong>Bubble sort:</strong>This algorithm repeatedly compares adjacent elements in a list and swaps them if they are in the wrong order. While it's easy to implement, bubble sort is inefficient for large datasets due to its time complexity.</li>
-               <li><strong>Selection sort:</strong> Selection sort works by finding the smallest (or largest) element in a list and swapping it with the first unsorted element, repeating the process until the entire list is sorted.</li>
-               <li><strong>Insertion sort:</strong>Insertion sort builds the final sorted array one element at a time. It repeatedly compares and places the current element in its correct position relative to the sorted portion of the list.</li>
-               <li><strong>Merge sort:</strong>Merge sort divides the data into smaller chunks, sorts them individually, and then merges them back together in order. It's highly efficient for large datasets and operates with a time complexity of O(n log n).</li>
-               <li><strong>Quick sort:</strong>Quick sort selects a "pivot" element and partitions the data into two groups: one containing elements smaller than the pivot, and the other containing elements larger. It recursively sorts the subgroups. It's known for its efficiency in most cases.</li>
-               <li><strong>Heap sort:</strong>Heap sort utilizes a heap data structure to sort elements. It is particularly effective for large datasets and is useful in priority queue applications.</li>
+            </ul>
+       </div>
+       <div class="container">
+            <h2>7.Deliberate on sorting and searching algorithms, the technique behind each and their connection to the real world</h2>
+            <h3>Ans:</h3>
+            <ul>
+                <li><strong>Sorting algorithms:</strong> These algorithms are used to arrange data in a specific order, such as ascending or descending. Sorting is essential in various computational tasks like data analysis, searching, and optimizing processes.</li>
+                <li><strong>Bubble sort:</strong>This algorithm repeatedly compares adjacent elements in a list and swaps them if they are in the wrong order. While it's easy to implement, bubble sort is inefficient for large datasets due to its time complexity.</li>
+                <li><strong>Selection sort:</strong> Selection sort works by finding the smallest (or largest) element in a list and swapping it with the first unsorted element, repeating the process until the entire list is sorted.</li>
+                <li><strong>Insertion sort:</strong>Insertion sort builds the final sorted array one element at a time. It repeatedly compares and places the current element in its correct position relative to the sorted portion of the list.</li>
+                <li><strong>Merge sort:</strong>Merge sort divides the data into smaller chunks, sorts them individually, and then merges them back together in order. It's highly efficient for large datasets and operates with a time complexity of O(n log n).</li>
+                <li><strong>Quick sort:</strong>Quick sort selects a "pivot" element and partitions the data into two groups: one containing elements smaller than the pivot, and the other containing elements larger. It recursively sorts the subgroups. It's known for its efficiency in most cases.</li>
+                <li><strong>Heap sort:</strong>Heap sort utilizes a heap data structure to sort elements. It is particularly effective for large datasets and is useful in priority queue applications.</li>
                 <li><strong>Linear Search:</strong>This basic search method looks at each element of the list sequentially until it finds the target value. It's simple but inefficient for large datasets</li>
                 <li><strong>Binary Search:</strong>Binary search operates on sorted arrays by dividing the search range in half repeatedly, allowing it to efficiently locate an element with a time complexity of O(log n).</li>
-             <li><strong>Real world connection:</strong>orting and searching are fundamental in various real-world applications, such as databases, search engines, operating systems, and even in web applications, where efficiency and speed are critical.
-
-</li>
-           </ul>
+                <li><strong>Real world connection:</strong>orting and searching are fundamental in various real-world applications, such as databases, search engines, operating systems, and even in web applications, where efficiency and speed are critical.</li>
+            </ul>
        </div>
        <div class="container">
-        <h2>8..Discuss the importance of graph algorithms with respect to spanning trees and shortest path.</h2>
-         <h3>Ans:</h3>
-           <ul>
+            <h2>8..Discuss the importance of graph algorithms with respect to spanning trees and shortest path.</h2>
+            <h3>Ans:</h3>
+            <ul>
                <li>Graph algorithms play a crucial role in solving real-world problems involving networks, transportation, and logistics. Spanning tree algorithms like Kruskal’s and Prim’s are important for finding the minimum set of edges to connect all vertices in a graph without cycles, which is useful in network design. Shortest path algorithms like Dijkstra’s and Bellman-Ford are essential for finding the quickest route between two points, which has applications in GPS navigation, flight routing, and communication networks.
-</li>
+               </li>
            </ul>
        </div>
        <div class="container">
-       <h2>9.Discuss about the different studied algorithm design techniques.</h2>
-        <h3>Ans:</h3>
-      <ul>
-      </li>Several algorithm design techniques have been studied in this course, each with its own applications and advantages. These include</li>
-         <li><strong>Divide and conquer:</strong> This technique involves breaking a problem into smaller sub-problems, solving each recursively, and combining the results. Examples include Merge Sort and Quick Sort.</li>
-          <li><strong>Dynamic programming:</strong>This technique solves problems by breaking them into overlapping subproblems and storing the results of these subproblems to avoid redundant computations. Examples include the Fibonacci sequence and the Knapsack problem.</li>
-          <li><strong>Greedy algorithms:</strong> These algorithms build solutions step-by-step, choosing the locally optimal choice at each step, with the hope of finding a globally optimal solution. Examples include the Huffman coding algorithm and Kruskal’s algorithm.</li>
-          <li><strong>Backtracking:</strong>Used to explore all possible solutions by systematically searching through the space of possible solutions and undoing steps when a condition is violated. Examples include solving the N-Queens problem and finding a path in a maze.</li>
-       </ul>
+            <h2>9.Discuss about the different studied algorithm design techniques.</h2>
+            <h3>Ans:</h3>
+            <ul>
+                <li>Several algorithm design techniques have been studied in this course, each with its own applications and advantages. These include</li>
+                <li><strong>Divide and conquer:</strong> This technique involves breaking a problem into smaller sub-problems, solving each recursively, and combining the results. Examples include Merge Sort and Quick Sort.</li>
+                <li><strong>Dynamic programming:</strong>This technique solves problems by breaking them into overlapping subproblems and storing the results of these subproblems to avoid redundant computations. Examples include the Fibonacci sequence and the Knapsack problem.</li>
+                <li><strong>Greedy algorithms:</strong> These algorithms build solutions step-by-step, choosing the locally optimal choice at each step, with the hope of finding a globally optimal solution. Examples include the Huffman coding algorithm and Kruskal’s algorithm.</li>
+                <li><strong>Backtracking:</strong>Used to explore all possible solutions by systematically searching through the space of possible solutions and undoing steps when a condition is violated. Examples include solving the N-Queens problem and finding a path in a maze.</li>
+            </ul>
 
       <section>
     
         <h1>Algorithm Learning Reflections </h1>
         <div class="container">
-        <h2>1.How do you determine the most efficient approach when solving a complex problem?</h2>
-        <ul>
-           <li>To determine the most efficient approach, I analyze the problem’s constraints and objectives. By understanding the problem size, input types, and expected output, I can determine which algorithm or data structure fits best. I evaluate the time and space complexity of potential solutions, using Big O notation to choose the most efficient approach</li>
-        <li><strong>Example:</strong> When deciding between different sorting algorithms, I would choose Quick Sort for large datasets due to its average O(n log n) performance, as opposed to Bubble Sort’s O(n²).</li>
-        </ul>
+             <h2>1.How do you determine the most efficient approach when solving a complex problem?</h2>
+             <ul>
+                 <li>To determine the most efficient approach, I analyze the problem’s constraints and objectives. By understanding the problem size, input types, and expected output, I can determine which algorithm or data structure fits best. I evaluate the time and space complexity of potential solutions, using Big O notation to choose the most efficient approach</li>
+                 <li><strong>Example:</strong> When deciding between different sorting algorithms, I would choose Quick Sort for large datasets due to its average O(n log n) performance, as opposed to Bubble Sort’s O(n²).</li>
+             </ul>
+        </div>
     
-    </div>
-        </ul>
-    </div>
-    
-    <div class="container">
-        <h2>2. Reflect on a situation where you need to balance multiple conflicting constraints in a design. What approach did you take?</h2>
-        </ul>
-            <li>In our smart city design project, we had to balance between time efficiency, space efficiency, and real-time processing. I focused on optimizing key algorithms while ensuring that memory usage and response times were within acceptable limits.</li>
-            <li><strong>Example : </strong> For the Job Matching System, I had to balance speed and accuracy, opting for an efficient search algorithm like Knuth-Morris-Pratt over simpler methods like brute-force string matching.</li>
-        </u1>
-    </div>
-        </ul>
-    </div>
-    <div class="container">
-        <h2>3.What criteria do you use to evaluate the effectiveness of a solution?</h2>
-        </u1> 
-           <li>I evaluate solutions based on their efficiency (time and space complexity), scalability (how well the solution handles increased input sizes), and correctness (whether it solves the problem within the expected constraints). Additionally, I assess its flexibility and maintainability.</li>
-           <li><strong>Example:</strong> For the Unemployment Rate Calculation, the Dijkstra’s and Bellman-Ford algorithms were tested for both speed and accuracy in calculating shortest paths to employment.</li>
-        </u1>
-  </div>
-        </ul>
-  </div>
+        <div class="container">
+             <h2>2. Reflect on a situation where you need to balance multiple conflicting constraints in a design. What approach did you take?</h2>
+             <ul>
+                  <li>In our smart city design project, we had to balance between time efficiency, space efficiency, and real-time processing. I focused on optimizing key algorithms while ensuring that memory usage and response times were within acceptable limits.</li>
+                  <li><strong>Example : </strong> For the Job Matching System, I had to balance speed and accuracy, opting for an efficient search algorithm like Knuth-Morris-Pratt over simpler methods like brute-force string matching.</li>
+             </u1>
+        </div>
+       
+        <div class="container">
+             <h2>3.What criteria do you use to evaluate the effectiveness of a solution?</h2>
+             <u1> 
+                  <li>I evaluate solutions based on their efficiency (time and space complexity), scalability (how well the solution handles increased input sizes), and correctness (whether it solves the problem within the expected constraints). Additionally, I assess its flexibility and maintainability.</li>
+                  <li><strong>Example:</strong> For the Unemployment Rate Calculation, the Dijkstra’s and Bellman-Ford algorithms were tested for both speed and accuracy in calculating shortest paths to employment.</li>
+             </u1>
+        </div>
 
-    <div class="container">
-        <h2>4.How can you adapt an existing solution to address a new or unforeseen challenge?</h2>
-        <ul>
-           <li>By analyzing the root cause of the challenge and identifying the components of the existing solution that need modification. If an unforeseen challenge arises, I break down the problem and adjust the algorithm or data structure accordingly, ensuring minimal disruption to the overall system.</li>
-           <li><strong>Example:</strong>If a new job sector arises, I would adapt the Job Vacancy Database Management system to include dynamic categorization, ensuring future scalability.</li>
-        </ul>
-    </div>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>4.How can you adapt an existing solution to address a new or unforeseen challenge?</h2>
+             <ul>
+                 <li>By analyzing the root cause of the challenge and identifying the components of the existing solution that need modification. If an unforeseen challenge arises, I break down the problem and adjust the algorithm or data structure accordingly, ensuring minimal disruption to the overall system.</li>
+                 <li><strong>Example:</strong>If a new job sector arises, I would adapt the Job Vacancy Database Management system to include dynamic categorization, ensuring future scalability.</li>
+             </ul>
+        </div>
 
-      <div class="container">
-        <h2>5. What strategies do you use to identify patterns or structures in datasets or problems?</h2>
-        <ul>
-           <li>I use data visualization techniques to identify patterns, then choose appropriate algorithms (e.g., clustering or sorting) to exploit those patterns. I also rely on statistical analysis or machine learning models when necessary to identify structures that aren't immediately obvious.</li>
-           <li><strong>Example:</strong>In job distribution optimization, I used geographic data to identify clusters of high unemployment areas and applied graph algorithms like Kruskal’s and Prim’s for optimal job allocation.</li>
-        </ul>
-    </div>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>5. What strategies do you use to identify patterns or structures in datasets or problems?</h2>
+             <ul>
+                 <li>I use data visualization techniques to identify patterns, then choose appropriate algorithms (e.g., clustering or sorting) to exploit those patterns. I also rely on statistical analysis or machine learning models when necessary to identify structures that aren't immediately obvious.</li>
+                 <li><strong>Example:</strong>In job distribution optimization, I used geographic data to identify clusters of high unemployment areas and applied graph algorithms like Kruskal’s and Prim’s for optimal job allocation.</li>
+             </ul>
+        </div>
 
-       <div class="container">
-        <h2>6. How do you decide when to prioritize simplicity over optimization in a solution?</h2>
-        <ul>
-           <li>I prioritize simplicity when a solution needs to be implemented quickly, is intended for smaller datasets, or if performance differences are negligible for the application. I consider simplicity first for maintainability and when scalability isn’t a primary concern.</li>
-           <li><strong>Example:</strong>For the Job Search System, I initially opted for Brute Force String Matching, as the simplicity of implementation was more important for a small-scale, initial version of the system.</li>
-        </ul>
-    </div>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>6. How do you decide when to prioritize simplicity over optimization in a solution?</h2>
+             <ul>
+                 <li>I prioritize simplicity when a solution needs to be implemented quickly, is intended for smaller datasets, or if performance differences are negligible for the application. I consider simplicity first for maintainability and when scalability isn’t a primary concern.</li>
+                 <li><strong>Example:</strong>For the Job Search System, I initially opted for Brute Force String Matching, as the simplicity of implementation was more important for a small-scale, initial version of the system.</li>
+             </ul>
+        </div>
+       
+        <div class="container">
+             <h2>7. Reflect on how breaking down a problem into smaller components can help you approach it more effectively.</h2>
+             <ul>
+                 <li>Breaking a problem into smaller components simplifies implementation and debugging. Techniques like divide-and-conquer leverage this to solve complex problems more efficiently.</li>
+                 <li><strong>Example:</strong>The smart city project was divided into components like job matching, vacancy management, and economic reporting. This helped in isolating the complex task of job distribution optimization from other aspects of the system.</li>
+             </ul>
+        </div>
 
-    <div class="container">
-        <h2>7. Reflect on how breaking down a problem into smaller components can help you approach it more effectively.</h2>
-        <ul>
-           <li>Breaking a problem into smaller components simplifies implementation and debugging. Techniques like divide-and-conquer leverage this to solve complex problems more efficiently.</li>
-           <li><strong>Example:</strong>The smart city project was divided into components like job matching, vacancy management, and economic reporting. This helped in isolating the complex task of job distribution optimization from other aspects of the system.</li>
-        </ul>
-    </div>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>8. Reflect on the trade-offs while choosing between different approaches to solve a problem.</h2>
+             <ul>
+                 <li>Trade-offs are inevitable when choosing algorithms or data structures. I weigh the trade-offs between time complexity, space complexity, and ease of implementation. The goal is to find a balance that meets the system’s requirements without over-engineering the solution.</li>
+                 <li><strong>Example:</strong>For the Economic Inequality Reporting system, I had to choose between BFS (breadth-first search) for quick reporting and Warshall’s algorithm for better accuracy. Ultimately, BFS was chosen for simplicity, as it met our reporting speed requirements.</li>
+            </ul>
+        </div>
 
-     <div class="container">
-        <h2>8. Reflect on the trade-offs while choosing between different approaches to solve a problem.</h2>
-        <ul>
-           <li>Trade-offs are inevitable when choosing algorithms or data structures. I weigh the trade-offs between time complexity, space complexity, and ease of implementation. The goal is to find a balance that meets the system’s requirements without over-engineering the solution.</li>
-           <li><strong>Example:</strong>For the Economic Inequality Reporting system, I had to choose between BFS (breadth-first search) for quick reporting and Warshall’s algorithm for better accuracy. Ultimately, BFS was chosen for simplicity, as it met our reporting speed requirements.</li>
-        </ul>
-    </div>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>9. How do you identify and address potential limitations or weaknesses in a proposed solution?</h2>
+             <ul>
+                  <li>I continuously test the solution against different edge cases and performance benchmarks. When limitations arise, I re-evaluate the design and, if necessary, switch to more optimized solutions or redesign parts of the system to improve performance.</li>
+                  <li><strong>Example : </strong> When encountering issues with job distribution optimization in certain areas of the city, I revisited the algorithm and adapted it to account for the unique geography, improving its accuracy.</li>
+             </u1>
+        </div>
 
-     <div class="container">
-        <h2>9. How do you identify and address potential limitations or weaknesses in a proposed solution?</h2>
-        </ul>
-            <li>I continuously test the solution against different edge cases and performance benchmarks. When limitations arise, I re-evaluate the design and, if necessary, switch to more optimized solutions or redesign parts of the system to improve performance.</li>
-            <li><strong>Example : </strong> When encountering issues with job distribution optimization in certain areas of the city, I revisited the algorithm and adapted it to account for the unique geography, improving its accuracy.</li>
-        </u1>
-    </div>
-        </ul>
-    </div>
+        <div class="container">
+             <h2>10. Reflect on how applying knowledge from one context can help you solve a problem in a different context.<</h2>
+             <ul>
+                  <li>Knowledge from one domain can often be applied to solve problems in another by recognizing similarities. For instance, techniques in optimization used in sorting can be used in job distribution, as both involve finding optimal solutions based on certain constraints.</li>
+                  <li><strong>Example : </strong>The concepts of graph algorithms used in routing were applicable when optimizing job distribution paths based on geographic proximity in our project.</li>
+             </u1>
+         </div>
 
- <div class="container">
-        <h2>10. Reflect on how applying knowledge from one context can help you solve a problem in a different context.<</h2>
-        </ul>
-            <li>Knowledge from one domain can often be applied to solve problems in another by recognizing similarities. For instance, techniques in optimization used in sorting can be used in job distribution, as both involve finding optimal solutions based on certain constraints.</li>
-            <li><strong>Example : </strong>The concepts of graph algorithms used in routing were applicable when optimizing job distribution paths based on geographic proximity in our project.</li>
-        </u1>
-    </div>
-        </ul>
-    </div>
-
-  <div class="container">
-        <h2>11. How do you decide when to innovate versus relying on tried-and-tested solutions?<</h2>
-        </ul>
-            <li>I innovate when existing solutions are not sufficient or if they do not scale well with new requirements. When innovation is unnecessary or would complicate the solution, I rely on tried-and-tested algorithms that are known to work well in similar scenarios.</li>
-            <li><strong>Example : </strong>In the Job Vacancy Database Management system, I used Quick Sort and Merge Sort for efficient data handling, as these are established, effective algorithms for sorting large datasets, rather than attempting to create new sorting methods.</li>
-        </u1>
-    </div>
-        </ul>
-    </div>
+         <div class="container">
+              <h2>11. How do you decide when to innovate versus relying on tried-and-tested solutions?<</h2>
+              </ul>
+                   <li>I innovate when existing solutions are not sufficient or if they do not scale well with new requirements. When innovation is unnecessary or would complicate the solution, I rely on tried-and-tested algorithms that are known to work well in similar scenarios.</li>
+                   <li><strong>Example : </strong>In the Job Vacancy Database Management system, I used Quick Sort and Merge Sort for efficient data handling, as these are established, effective algorithms for sorting large datasets, rather than attempting to create new sorting methods.</li>
+              </u1>
+         </div>
         
   </section>
   <button onclick="window.history.back();" style="background-color: #0bb12f; color: rgb(241, 233, 233); border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
