@@ -8,35 +8,21 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
-            background-color: #030303;
-            color: #212529;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 20px;
         }
-       
-        h1, h2, h3 {
-            color: #007bff;
+        h1, h2 {
+            color: #0056b3;
         }
         h1 {
             text-align: center;
             text-transform: uppercase;
             margin-bottom: 20px;
-            color: #fefeff;
-            background-color: #039311;
-            padding: 10px;
-            border-radius: 5px;
         }
         h2 {
             margin-top: 30px;
-            border-bottom: 2px solid #0f0f10;
-            padding: 10px;
-            background-color: #30da2d;
-            border-radius: 4px;
-            color: #020202;
-        }
-        h3 {
-            margin-top: 20px;
-            font-style: italic;
         }
         ul {
             list-style-type: disc;
@@ -45,174 +31,186 @@
         li {
             margin-bottom: 8px;
         }
-        code {
-            background-color: #dfe6ed;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-size: 0.95em;
-        }
         p {
             margin: 15px 0;
-        }
-        strong {
-            color: #343a40;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #d0f9bd;
+            background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .note {
-            font-size: 0.9em;
-            background-color: #f8f9fa;
-            border-left: 4px solid #6da4de;
-            padding: 10px;
-            margin-top: 10px;
-        }
-        footer {
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #007bff;
+            padding: 1rem;
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #6a7077;
         }
-    .navbar {
-    position: sticky;
-    top: 0;
-    background-color:  #0c540e;
-    width: 100%;
-    z-index: 1000;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    justify-content: space-between;
-  }
-
- 
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  .nav-list li {
-    margin: 0;
-    color: #866545;
-  }
-  
-  .nav-list a {
-    text-decoration: none;
-    color: #FB5235;
-    align-content: center;
-    padding: 1rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-    transform: scale(1.02);  
-    background-color: #2fef2c;
-   
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
-    transition: transform 0.2s, box-shadow 0.2s;
-    border-radius: 4px;
-  }
-  
-  .content {
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <ul class="nav-list">
-            <li><a style="color:rgb(255, 255, 255)"  href="/Priyankacb.github.io/blocks/home/home.html">Home</a></li>
-            <li><a style="color:rgb(255, 255, 255)"  href="/Priyankacb.github.io/index.html">PROJECT OVERVIEW</a></li>
-            <li><a  style="color:rgb(253, 251, 251)" href="/Priyankacb.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
-        </ul>
+        <a href="home.html">Home</a>
+        <a href="index.html">Project Overview</a>
+        <a href="teamlearning.html">Learning Reflections</a>
     </nav>
-  <section>
-    
-        <h1>Data Structures and Algorithms </h1>
-        <div class="container">
-        <h2>1. What are the kinds of problems we see in nature?</h2>
-        <ul>
-            <li><strong>Iteration:</strong> Animals like bees and ants find paths to food, which is like finding the shortest path in algorithms.</li>
-            <li><strong>Recursion:</strong> Animals like birds and fish make decisions based on the environment, similar to recursive algorithms.</li>
-            <li><strong>Backtracking:</strong> Ants finding food or animals making decisions based on trial and error.</li>
-        </ul>
-    </div>
-    
+
+    <h1>Data Structures and Algorithms Summary</h1>
+
     <div class="container">
-        <h2>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth</h2>
+        <h2>1. Problems in Nature</h2>
+        <p>Problems can be solved by various approaches:</p>
         <ul>
-            <li><strong>Space Efficiency:</strong> It refers to how much memory an algorithm uses. Algorithms that use less memory are more efficient.</li>
-            <li><strong>Time Efficiency:</strong> It refers to how much time an algorithm takes to complete. Faster algorithms are more efficient as they handle large inputs better.</li>
-        </ul>
-    
-    
-        <h2>Why are They Important?</h2>
-        <ul>
-            <li><strong>Resource Management:</strong> Efficient algorithms save time and memory, which are essential for systems with limited resources.</li>
-            <li><strong>Scalability:</strong> Efficient algorithms maintain good performance as input sizes grow.</li>
-            <li><strong>Real-Time Applications:</strong> Fast and efficient algorithms are crucial for real-time applications like GPS, AI, and large-scale data processing.</li>
-            <li><strong>Different Classes of Problems</strong></li>
-            <li><strong>Computational Problems:</strong> Problems that require algorithms for tasks like sorting and searching.</li>
-            <li><strong>Optimization Problems:</strong> Problems where we look for the best possible solution, like finding the shortest path or best use of resources.</li>
-            <li><strong>Decision Problems:</strong> Problems that involve determining whether something is true or false.</li>
-            <li><strong>Search Problems:</strong> Problems where we find specific data, like searching for a word in a dictionary.</li>
+            <li><strong>Iteration:</strong> Solving step by step, useful for array-based tasks.</li>
+            <li><strong>Recursion:</strong> Breaking down problems into subproblems, like factorials.</li>
+            <li><strong>Backtracking:</strong> Exploring all possibilities to find a solution, like in N-Queens.</li>
         </ul>
     </div>
 
     <div class="container">
-        <h2>3. Take away from different design principles from chapter 2</h2>
-    </div>
-
-    <div class="container">
-        <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2>
-        <h3>Ans:</h3>
+        <h2>2. Space and Time Efficiency</h2>
+        <p>Efficiency ensures better performance:</p>
         <ul>
-            <li><strong>Hierarchical Data & Tree Data Structures</strong></li>
-            <li>Hierarchical data is where information is organized in a parent-child relationship. Different types of trees make data operations faster, depending on their structure.</li>
-            <li><strong>General Tree:</strong> A basic tree where each parent has several children. Searching is quick, but performance can drop if the tree is unbalanced.</li>
-            <li><strong>AVL Tree:</strong> A balanced tree that keeps its structure, ensuring that search, insert, and delete operations are always fast, even in the worst case.</li>
-            <li><strong>Red-Black Tree:</strong> A self-balancing tree that uses color to keep itself balanced, making it faster than AVL trees in some situations.</li>
-            <li><strong>2-3 Tree:</strong> A tree with nodes that can have two or three children, used for efficient searching and inserting in databases.</li>
-            <li><strong>Heap:</strong> A tree used in priority queues, where the highest or lowest value is always at the top. It’s used in tasks like sorting and scheduling.</li>
-            <li><strong>Trie:</strong> A tree used for storing strings, making searches fast when looking for prefixes, like in autocomplete systems.</li>
-            <li><strong>Choosing the Right Tree:</strong></li>
-            <ul>
-                <li><strong>Trie:</strong> Best for autocomplete or prefix-based searches.</li>
-                <li><strong>Heap:</strong> Great for priority queues or scheduling tasks.</li>
-                <li><strong>AVL Tree or Red-Black Tree:</strong> Best for maintaining sorted data in applications where insertions, deletions, and searches are frequent.</li>
-            </ul>
+            <li><strong>Space:</strong> Optimizing memory usage.</li>
+            <li><strong>Time:</strong> Reducing execution time, measured using Big-O.</li>
+        </ul>
+        <p>Example growth rates:</p>
+        <ul>
+            <li><strong>O(1):</strong> Constant time.</li>
+            <li><strong>O(n):</strong> Time grows linearly with input.</li>
         </ul>
     </div>
 
     <div class="container">
-        <h2>5. Different ways of searching in data structures: sequential search, binary search, hashing, etc.</h2>
-        <h3>Ans:</h3>
+        <h2>3. Design Principles</h2>
+        <p>Efficient solutions are built on these principles:</p>
         <ul>
-            <li><strong>Sequential Search:</strong> This is a simple search method where we check every element in a list one by one. It's easy to implement but slow if the list is long.</li>
-            <li><strong>Binary Search:</strong> A faster search method that works on sorted lists. It keeps dividing the list into half and checking the middle element to find the target value.</li>
-            <li><strong>Hashing:</strong> A method where we use a hash function to quickly find a specific data point. It’s very efficient, especially for large datasets.</li>
-            <li><strong>Hash Table:</strong> A structure that stores data in key-value pairs, making search operations very fast. It’s used in databases and memory caches.</li>
+            <li><strong>Divide and Conquer:</strong> Splitting tasks into sub-tasks, as in MergeSort.</li>
+            <li><strong>Greedy:</strong> Choosing the best immediate option, like Prim's algorithm.</li>
+            <li><strong>Dynamic Programming:</strong> Storing subproblem results, as in Fibonacci series.</li>
         </ul>
     </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h2>4. Tree Structures</h2>
+        <p>Trees efficiently manage hierarchical data:</p>
+        <ul>
+            <li><strong>BST:</strong> Enables fast searching and insertion.</li>
+            <li><strong>AVL:</strong> Maintains balance for performance.</li>
+            <li><strong>Heap:</strong> Useful for priority queues.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>5. Array Queries</h2>
+        <p>Arrays solve various problems:</p>
+        <ul>
+            <li>Sum calculations with prefix sums.</li>
+            <li>Updates and queries with Fenwick trees.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>6. Trees vs. Graphs</h2>
+        <p>Graphs are more flexible than trees:</p>
+        <ul>
+            <li><strong>Trees:</strong> Aces hierarchical structures, like directory systems.</li>
+            <li><strong>Graphs:</strong> Represent networks with cycles, like road maps.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>7. Sorting and Searching</h2>
+        <p>Organized data aids processing:</p>
+        <ul>
+            <li><strong>Sorting:</strong> QuickSort arranges data efficiently.</li>
+            <li><strong>Searching:</strong> Binary Search is optimal for sorted data.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>8. Graph Algorithms</h2>
+        <p>Graphs reveal optimal solutions:</p>
+        <ul>
+            <li><strong>Dijkstra’s:</strong> Shortest path algorithm.</li>
+            <li><strong>Kruskal’s:</strong> Builds minimum spanning trees.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>9. Algorithm Design Techniques</h2>
+        <p>Common design methods include:</p>
+        <ul>
+            <li><strong>Divide and Conquer:</strong> Break problems into smaller tasks.</li>
+            <li><strong>Dynamic Programming:</strong> Reuse solutions to subproblems.</li>
+            <li><strong>Greedy:</strong> Make optimal local decisions.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+         <h2>Algorithm Learning Reflections</h2>
+            <section>
+        <h2>1Choosing the Best Approach</h2>
+        <p>Analyze constraints and pick suitable strategies, like dynamic programming for overlapping subproblems.</p>
+    </div>
+
+    <div class="container">
+        <h2>2Balancing Constraints</h2>
+        <p>Optimize for constraints like memory and time to ensure efficient performance.</p>
+    </div>
+
+    <div class="container">
+        <h2>3. Evaluating Solutions</h2>
+        <p>Verify correctness and efficiency using edge cases and runtime analysis.</p>
+    </div>
+
+    <div class="container">
+        <h2>4. Adapting Solutions</h2>
+        <p>Refine existing solutions, like using Bellman-Ford for graphs with negative weights.</p>
+    </div>
+
+    <div class="container">
+        <h2>5. Recognizing Patterns</h2>
+        <p>Identify patterns to simplify and solve problems faster, such as using recurrence relations.</p>
+    </div>
+
+    <div class="container">
+        <h2>6. Simplicity vs. Optimization</h2>
+        <p>Simple solutions work for small inputs; optimize for larger datasets to save resources.</p>
+    </div>
+
+    <div class="container">
+        <h2>7. Breaking Down Problems</h2>
+        <p>Divide complex tasks into smaller components for easier management and debugging.</p>
+    </div>
+
+    <div class="container">
+        <h2>8. Handling Trade-offs</h2>
+        <p>Prioritize based on requirements, such as choosing hash tables for speed despite higher memory usage.</p>
+    </div>
+
+    <div class="container">
+        <h2>9. Identifying Weaknesses</h2>
+        <p>Analyze limitations in solutions and improve algorithms or designs accordingly.</p>
+    </div>
+
+    <div class="container">
+        <h2>10. Applying Knowledge</h2>
+        <p>Leverage known techniques in new domains, like applying DP in bioinformatics.</p>
+    </div>
+
+    <div class="container">
+        <h2>11. Innovate vs. Reuse</h2>
+        <p>Reuse proven methods for common tasks; innovate when faced with novel challenges.</p>
+    </div>
+
 </body>
 </html>
