@@ -1,7 +1,200 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Data Structures and Algorithms Summary</title> <style> body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; background-color: #030303; color: #212529; margin: 0; padding: 20px; } h1, h2, h3 { color: #007bff; } h1 { text-align: center; text-transform: uppercase; margin-bottom: 20px; color: #fefeff; background-color: #039311; padding: 10px; border-radius: 5px; } h2 { margin-top: 30px; border-bottom: 2px solid #0f0f10; padding: 10px; background-color: #30da2d; border-radius: 4px; color: #020202; } h3 { margin-top: 20px; font-style: italic; } ul { list-style-type: disc; margin: 15px 20px; } li { margin-bottom: 8px; } code { background-color: #dfe6ed; padding: 2px 4px; border-radius: 4px; font-size: 0.95em; } p { margin: 15px 0; } strong { color: #343a40; } .container { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #d0f9bd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } .note { font-size: 0.9em; background-color: #f8f9fa; border-left: 4px solid #6da4de; padding: 10px; margin-top: 10px; } footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #6a7077; } .navbar { position: sticky; top: 0; background-color: #0c540e; width: 100%; z-index: 1000; padding: 0.5rem 1rem; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); display: flex; border-radius: 10px; justify-content: center; justify-content: space-between; } .nav-list { list-style: none; display: flex; justify-content: space-around; align-content: center; margin: 0; padding: 0; } .nav-list li { margin: 0; color: #866545; } .nav-list a { text-decoration: none; color: #FB5235; align-content: center; padding: 1rem 1rem; transition: background-color 0.3s ease; } .nav-list a:hover { transform: scale(1.02); background-color: #2fef2c; box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); transition: transform 0.2s, box-shadow 0.2s; border-radius: 4px; } .content { padding: 2rem; font-size: 1.2rem; line-height: 1.6; } </style> </head> <body> <nav class="navbar"> <ul class="nav-list"> <li><a style="color:rgb(255, 255, 255)" href="/Priyankacb.github.io/blocks/home/home.html">Home</a></li> <li><a style="color:rgb(255, 255, 255)" href="/Priyankacb.github.io/index.html">PROJECT OVERVIEW</a></li> <li><a style="color:rgb(253, 251, 251)" href="/Priyankacb.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li> </ul> </nav> <section> <h1>Data Structures and Algorithms </h1> <div class="container"> <h2>1. What are the kinds of problems we see in nature?</h2> <ul> <li><strong>Iteration:</strong>Solving problems through repeated steps (e.g., calculating compound interest, searching through an array).</li> <li><strong>Recursion:</strong>Solving a problem by dividing it into smaller subproblems (e.g., Tower of Hanoi, Fibonacci sequence).</li> <li><strong>Backtracking:</strong>Exploring all possible solutions and discarding invalid ones (e.g., N-Queens problem, maze-solving).</li> <p>These approaches help solve real-world problems in physics, biology, and computer science.</p> </ul> </div> <div class="container"> <h2>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth</h2> <p>Space and time efficiency are critical measures of an algorithm's performance:</p> <ul> <li><strong>Space Efficiency:</strong> Refers to the memory an algorithm uses during execution. Efficient space usage is important for handling large datasets on devices with limited memory.</li> <li><strong>Time Efficiency:</strong> Refers to the time an algorithm takes to complete. Faster algorithms are necessary for real-time applications.</li> </ul> <p>Algorithm complexity is measured using Big-O notation:</p> <ul> <li><strong>O(1):</strong> Constant time (fastest).</li> <li><strong>O(log n):</strong> Logarithmic growth.</li> <li><strong>O(n):</strong> Linear growth.</li> <li><strong>O(n²):</strong> Quadratic growth (slower).</li> </ul> </div> <div class="container"> <h2>3. Take away from different design principles from chapter 2</h2> <p>Key design principles include:</p> <ul> <li><strong>Divide and Conquer:</strong> Break problems into smaller, manageable subproblems (e.g., MergeSort, QuickSort).</li> <li><strong>Greedy Algorithms:</strong> Make the best local choice at each step (e.g., Kruskal’s MST algorithm).</li> <li><strong>Dynamic Programming:</strong> Store solutions to overlapping subproblems (e.g., Fibonacci numbers, longest common subsequence).</li> </ul> <p>These principles improve problem-solving efficiency and applicability to real-world scenarios.</p> </div> <div class="container"> <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2> <p>Tree data structures organize hierarchical data efficiently. Examples include:</p> <ul> <li><strong>Binary Search Trees (BST):</strong> Efficient for searching and sorting.</li> <li><strong>AVL Trees:</strong> Self-balancing BST for maintaining logarithmic height.</li> <li><strong>Red-Black Trees:</strong> Ensure balanced trees for faster insertions/deletions.</li> <li><strong>Heaps:</strong> Used for priority queues.</li> <li><strong>Tries:</strong> Efficient for prefix-based searching (e.g., autocomplete).</li> </ul> <p>These structures optimize memory usage and reduce time complexity.</p> </div> <div class="container"> <h2>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed</h2>  <p>Array query algorithms address problems like:</p> <ul> <li>Finding sums over ranges (e.g., prefix sums, segment trees).</li> <li>Updating elements dynamically (e.g., Fenwick trees).</li> </ul> <p>Applications include real-time analytics, gaming, and financial systems.</p> </div>
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Structures and Algorithms Summary</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.8;
+      background-color: #f0f8ff;
+      color: #2f2f2f;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #4b0082;
+    }
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #ffffff;
+      background-color: #4b0082;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-top: 30px;
+      border-bottom: 2px solid #8a2be2;
+      padding: 10px;
+      background-color: #dcdcdc;
+      border-radius: 4px;
+      color: #4b0082;
+    }
+    h3 {
+      margin-top: 20px;
+      font-style: italic;
+    }
+    ul {
+      list-style-type: disc;
+      margin: 15px 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    p {
+      margin: 15px 0;
+    }
+    strong {
+      color: #333333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #6a7077;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #2e8b57;
+      width: 100%;
+      z-index: 1000;
+      padding: 0.5rem 1rem;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      border-radius: 10px;
+      justify-content: space-between;
+    }
+    .nav-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-list li {
+      margin: 0;
+      color: #ffffff;
+    }
+    .nav-list a {
+      text-decoration: none;
+      color: #fb5235;
+      align-content: center;
+      padding: 1rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .nav-list a:hover {
+      transform: scale(1.02);
+      background-color: #ff6347;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 4px;
+    }
+    .content {
+      padding: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    button {
+      background-color: #4b0082;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background-color: #6a5acd;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a style="color:rgb(255, 255, 255)" href="/Priyankacb.github.io/blocks/home/home.html">Home</a></li>
+      <li><a style="color:rgb(255, 255, 255)" href="/Priyankacb.github.io/index.html">PROJECT OVERVIEW</a></li>
+      <li><a style="color:rgb(253, 251, 251)" href="/Priyankacb.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Data Structures and Algorithms</h1>
+      <div class="container">
+        <h2>1. What are the kinds of problems we see in nature?</h2> 
+            <ul> 
+              <li><strong>Iteration:</strong>Solving problems through repeated steps (e.g., calculating compound interest, searching through an array).</li>
+              <li><strong>Recursion:</strong>Solving a problem by dividing it into smaller subproblems (e.g., Tower of Hanoi, Fibonacci sequence).</li> 
+              <li><strong>Backtracking:</strong>Exploring all possible solutions and discarding invalid ones (e.g., N-Queens problem, maze-solving).</li>
+           </ul>
+           <p>These approaches help solve real-world problems in physics, biology, and computer science.</p>
+           </ul> 
+      </div> 
+    <div class="container"> 
+        <h2>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth</h2>
+           <p>Space and time efficiency are critical measures of an algorithm's performance:</p> 
+        <ul> 
+           <li><strong>Space Efficiency:</strong> Refers to the memory an algorithm uses during execution. Efficient space usage is important for handling large datasets on devices with limited memory.</li> 
+           <li><strong>Time Efficiency:</strong> Refers to the time an algorithm takes to complete. Faster algorithms are necessary for real-time applications.</li> 
+       </ul> 
+        <p>Algorithm complexity is measured using Big-O notation:</p> <ul> <li><strong>O(1):</strong> Constant time (fastest).</li>
+         <ul>
+            <li><strong>O(log n):</strong> Logarithmic growth.</li>
+            <li><strong>O(n):</strong> Linear growth.</li>
+            <li><strong>O(n²):</strong> Quadratic growth (slower).</li>
+        </ul> 
+      </div> 
+    <div class="container">
+      <h2>3. Take away from different design principles from chapter 2</h2>
+      <p>Key design principles include:</p>
+      <ul> 
+          <li><strong>Divide and Conquer:</strong> Break problems into smaller, manageable subproblems (e.g., MergeSort, QuickSort).</li> 
+          <li><strong>Greedy Algorithms:</strong> Make the best local choice at each step (e.g., Kruskal’s MST algorithm).</li> 
+        <li><strong>Dynamic Programming:</strong> Store solutions to overlapping subproblems (e.g., Fibonacci numbers, longest common subsequence).</li> 
+      </ul> 
+      <p>These principles improve problem-solving efficiency and applicability to real-world scenarios.</p> 
+    </div> 
+    <div class="container"> 
+      <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2> 
+      <p>Tree data structures organize hierarchical data efficiently. Examples include:</p>
+      <ul>
+           <li><strong>Binary Search Trees (BST):</strong> Efficient for searching and sorting.</li>
+           <li><strong>AVL Trees:</strong> Self-balancing BST for maintaining logarithmic height.</li> 
+           <li><strong>Red-Black Trees:</strong> Ensure balanced trees for faster insertions/deletions.</li> 
+           <li><strong>Heaps:</strong> Used for priority queues.</li> <li><strong>Tries:</strong> Efficient for prefix-based searching (e.g., autocomplete).</li>
+      </ul> 
+      <p>These structures optimize memory usage and reduce time complexity.</p> 
+    </div> 
+    <div class="container"> 
+      <h2>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed</h2>
+      <p>Array query algorithms address problems like:</p>
+      <ul>
+        <li>Finding sums over ranges (e.g., prefix sums, segment trees).</li> 
+        <li>Updating elements dynamically (e.g., Fenwick trees).</li> 
+      </ul> 
+      <p>Applications include real-time analytics, gaming, and financial systems.</p>
+    </div>
 
     <div class="container">
-        <h1>6. Differentiate between tree and graphs and their traversals. The applications of each</h1>
+        <h2>6. Differentiate between tree and graphs and their traversals. The applications of each</h2>
         <p>Trees and graphs differ fundamentally:</p>
         <ul>
             <li><strong>Trees:</strong> Acyclic, hierarchical structures (e.g., family trees).</li>
@@ -16,7 +209,7 @@
 
     </div> 
      <div class="container">
-        <h1>7.Deliberate on sorting and searching algorithms, the technique behind each and their connection to the real world</h1>
+        <h2>7.Deliberate on sorting and searching algorithms, the technique behind each and their connection to the real world</h2>
         
             <p>Sorting algorithms (e.g., QuickSort, MergeSort) and searching algorithms (e.g., Binary Search) are vital for:</p>
         <ul>
@@ -26,7 +219,7 @@
 
        </div>
        <div class="container">
-        <h1>8..Discuss the importance of graph algorithms with respect to spanning trees and shortest path.</h1>
+        <h2>8..Discuss the importance of graph algorithms with respect to spanning trees and shortest path.</h2>
            <p>Graph algorithms like Dijkstra's and Kruskal's are essential for:</p>
         <ul>
             <li>Finding shortest paths in networks.</li>
@@ -37,7 +230,7 @@
 
        </div>
        <div class="container">
-       <h1>9.Discuss about the different studied algorithm design techniques.</h1>
+       <h2>9.Discuss about the different studied algorithm design techniques.</h2>
      <p>Studied algorithm design techniques include:</p>
         <ul>
             <li><strong>Divide and Conquer:</strong> Break problems into smaller pieces (e.g., MergeSort).</li>
@@ -48,63 +241,42 @@
             
            <div class="container">
         <h1>Algorithm Learning Reflections</h1>
+     
 
-        <section>
-            <h1>1. How do you determine the most efficient approach when solving a complex problem?</h1>
-            <p>To determine the most efficient approach, I analyze the problem constraints, required time complexity, and trade-offs. I also consider whether techniques like divide-and-conquer, dynamic programming, or greedy algorithms are appropriate for the problem.</p>
-        </section>
+<h2>1. How do you determine the most efficient approach when solving a complex problem?</h2>
+<p>I start by examining the problem's constraints, considering the required performance, and evaluating possible trade-offs. I then assess whether approaches like divide-and-conquer, dynamic programming, or greedy methods fit the problem’s needs.</p>
 
-        <section>
-            <h1>2. How do you balance multiple conflicting constraints in a design?</h1>
-            <p>I prioritize constraints based on their importance to the solution. For example, I optimize time complexity for real-time systems while ensuring space efficiency for memory-limited environments.</p>
-        </section>
-           <section>
-            <h1>3. What criteria do you use to evaluate the effectiveness of a solution?</h1>
-            <p>The key criteria include correctness, efficiency, scalability, and simplicity. I also consider edge cases and robustness against invalid inputs.</p>
-        </section>
+<h2>2. How do you balance multiple conflicting constraints in a design?</h2>
+<p>My approach is to rank constraints based on their impact on the overall solution. For instance, I may prioritize minimizing time complexity in real-time systems while optimizing memory usage for resource-constrained environments.</p>
 
-        <section>
-            <h1>4. How can you adapt an existing solution to address a new or unforeseen challenge?</h1>
-            <p>By modularizing and generalizing components of existing algorithms, I can adapt them for new challenges. For example, extending Dijkstra’s algorithm to handle negative weights using the Bellman-Ford algorithm.</p>
-        </section>
+<h2>3. What criteria do you use to evaluate the effectiveness of a solution?</h2>
+<p>Effectiveness is measured by factors such as correctness, efficiency, scalability, and simplicity. I also consider the algorithm’s ability to handle edge cases and robustness against invalid inputs.</p>
 
-        <section>
-            <h1>5. What strategies do you use to identify patterns or structures in datasets or problems?</h1>
-            <p>I look for repeating subproblems, hierarchical structures, or connections between data elements. This helps in choosing the right algorithm, like dynamic programming or graph traversal.</p>
-        </section>
-      <section>
-            <h1>6. How do you decide when to prioritize simplicity over optimization in a solution?</h1>
-            <p>I prioritize simplicity when the problem scale is small or optimization has diminishing returns. In larger systems, optimization becomes a higher priority.</p>
-        </section>
+<h2>4. How can you adapt an existing solution to address a new or unforeseen challenge?</h2>
+<p>By modularizing and generalizing parts of the algorithm, I can reapply them to new problems. For example, I could adapt Dijkstra's algorithm to handle negative edge weights by switching to the Bellman-Ford algorithm.</p>
 
-        <section>
-            <h1>7. How does breaking down a problem into smaller components help solve it more effectively?</h1>
-            <p>Breaking a problem into smaller components simplifies implementation and debugging. Techniques like divide-and-conquer leverage this to solve complex problems more efficiently.</p>
-        </section>
+<h2>5. What strategies do you use to identify patterns or structures in datasets or problems?</h2>
+<p>I analyze the problem for repeating patterns, hierarchical relationships, or connections among data elements. This helps me select the most appropriate algorithm, such as dynamic programming or graph traversal techniques.</p>
 
-        <section>
-            <h1>8. What trade-offs do you consider when solving problems?</h1>
-            <p>I consider trade-offs between time complexity, space complexity, simplicity, and maintainability. For example, using a hash table for O(1) access but sacrificing memory usage.</p>
-        </section>
-        <section>
-            <h1>9. How do you identify and address potential limitations or weaknesses in a proposed solution?</h1>
-            <p>By testing with edge cases, analyzing time-space complexity, and conducting code reviews, I identify weaknesses. I address them by refining the algorithm or choosing alternate approaches.</p>
-        </section>
+<h2>6. How do you decide when to prioritize simplicity over optimization in a solution?</h2>
+<p>I favor simplicity when the problem size is manageable or when optimization doesn't significantly improve performance. As systems grow larger, however, optimization becomes more important.</p>
 
-        <section>
-            <h1>10. How does applying knowledge from one context help solve a problem in another context?</h1>
-            <p>Techniques like dynamic programming, learned from optimization problems, can be applied to fields like machine learning or game theory to solve real-world problems effectively.</p>
-        </section>
-         <section>
-            <h1>11. How do you decide when to innovate versus relying on tried-and-tested solutions?</h1>
-            <p>When existing solutions meet requirements and constraints, I rely on them. For unique or complex challenges, I explore innovation to devise better approaches.</p>
-        </section>
+<h2>7. How does breaking down a problem into smaller components help solve it more effectively?</h2>
+<p>Dividing a problem into manageable components makes it easier to implement and debug. Techniques like divide-and-conquer take advantage of this approach to solve complex problems more efficiently.</p>
 
-      
+<h2>8. What trade-offs do you consider when solving problems?</h2>
+<p>I weigh the trade-offs between time complexity, space usage, simplicity, and maintainability. For example, choosing a hash table for its O(1) access time might increase memory usage.</p>
+
+<h2>9. How do you identify and address potential limitations or weaknesses in a proposed solution?</h2>
+<p>I detect weaknesses through edge case testing, complexity analysis, and code reviews. To improve the solution, I either refine the existing approach or explore alternative methods.</p>
+
+<h2>10. How does applying knowledge from one context help solve a problem in another context?</h2>
+<p>Skills learned in one domain, such as dynamic programming in optimization problems, can be transferred to other areas like machine learning or game theory, providing effective solutions to real-world problems.</p>
+
+<h2>11. How do you decide when to innovate versus relying on tried-and-tested solutions?</h2>
+<p>When established solutions fulfill the problem’s requirements, I stick with them. However, if the challenge is unique or particularly complex, I consider innovation to find more efficient or novel solutions.</p>
 
 
-    </div>
-  </section>
-  <button onclick="window.history.back();" style="background-color: #0bb12f; color: rgb(241, 233, 233); border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
+<button onclick="window.history.back();" style="background-color: #0bb12f; color: rgb(241, 233, 233); border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>       
 </body> 
-</html>  
+</html>
